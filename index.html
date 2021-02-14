@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+  <header>
+    <div class="container header-container">
+      <div class="header-container-cover">
+        <a href="#" class="logo">
+          <img src="./images/Logo2x.png" alt="Логотип" />
+        </a>
+        <div class="contacts">
+          <ul>
+            <li>+7 495 322 54 48</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="profile">Личный кабинет</a>
+    </div>
+    <div class="container menu-container round_corner">
+      <nav>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="#">Размещение</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div>
+        <form enctype="application/x-www-form-urlencoded" action="/search" method="get">
+          <div class="input-field">
+            <input type="text" name="search" placeholder="Поиск" value="" />
+            <input type="submit" value="" title="Поиск">
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container service-container">
+      <div class="item booking">
+        <h2>Быстрая бронь</h2>
+        <form enctype="application/x-www-form-urlencoded" action="/booking" method="get">
+          <div class="input-field">
+            <select name="city">
+              <option selected>Москва</option>
+              <option>Санкт-Петербург</option>
+              <option>Казань</option>
+              <option>Екатеринбург</option>
+              <option>Калининград</option>
+            </select>
+          </div>
+          <div class="input-field">
+              <input type="text" name="category" value="" placeholder="Категория номера" />
+          </div>
+          <div class="input-field">
+              <input type="text" name="date" value="" placeholder="Дата заселения" />
+          </div>
+          <div class="input-field">
+              <input type="text" name="number_nights" value="" placeholder="Количество ночей" />
+          </div>
+          <div class="input-field">
+              <input type="text" name="number_guests" value="" placeholder="Количество гостей" />
+          </div>
+          <input type="submit" value="Найти номер" class="button" />
+          <output>
+              <a href="#">9 756</a> предложений доступно
+          </output>
+        </form>
+      </div>
+      <div class="item offer">
+        <h2>Спецпредложение</h2>
+        <div class="offer">
+          <h3>Номера <br/>категории <br/>люкс</h3>
+          <p><span>от 5 000 р</span><a href="#">Подробнее <span>></span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="container">
+      <h2>О нас</h2>
+      <div>
+        Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
+      </div>
+    </div>
+  </main>
+  <section>
+    <div class="container service-article-container">
+      <h2>Услуги</h2>
+        <div class="container-cover">
+          <article class="round_corner">
+            <div class="preview">
+              <img src="./images/102x.png" alt="" />
+            </div>
+            <div class="intro bp">
+              <h3><a href="#">Эксклюзивное обслуживание ></a></h3>
+              <p>Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </article>
+          <article class="round_corner">
+            <div class="preview">
+              <img src="./images/152x.png" alt="" />
+            </div>
+            <div class="intro bp">
+              <h3><a href="#">Аренда банкетных залов ></a></h3>
+              <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+            </div>
+          </article>
+          <article class="round_corner">
+            <div class="preview">
+              <img src="./images/122x.png" alt="" />
+            </div>
+            <div class="intro bp">
+              <h3><a href="#">Сауны, бассейны, бани, фитнес-залы ></a></h3>
+              <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </div>
+          </article>
+          <article class="round_corner">
+            <div class="preview">
+              <img src="./images/carlox.png" alt="" />
+            </div>
+            <div class="intro bp">
+              <h3><a href="#">Охраняемые автомобильные стоянки ></a></h3>
+              <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container advantage-container">
+      <h2>Преимущества</h2>
+        <div class="container-cover">
+          <div class="round_corner bp">
+            <img src="./images/bathtub2x.png" alt="" />
+            <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/hanger2x.png" alt="" />
+            <p>Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/heating2x.png" alt="" />
+            <p>Таким образом реализация плановых заданий играет важную роль для понимания</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/hotel-key2x.png" alt="" />
+            <p>Повседневная практика показывает, что сложившаяся структура организации</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/parking2x.png" alt="" />
+            <p>Равным образом рамки и место обучения кадров способствует подготовке сотрудника</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/reception2x.png" alt="" />
+            <p>Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/security-box2x.png" alt="" />
+            <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          </div>
+          <div class="round_corner bp">
+            <img src="./images/swimming-pool2x.png" alt="" />
+            <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container booking-container">
+      <h2>Размещение</h2>
+      <div class="container-cover">
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/232x.png" alt="">
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p><span>от </span><b>4 698 р</b> / ночь</p>
+            <h4 class="title">Lagoona espanola</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/242x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p><span>от </span><b>5 148 р</b> / ночь</p>
+            <h4 class="title">Lagoona son tipicas</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/262x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>6 254 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona de la guerra</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/292x.png" alt=""/>
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>6 320 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona mentira piadosa</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/302x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>6 457 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona empujar la creatividad</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/312x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>6 490 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona el retorno</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/272x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>6 505 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona enfermo termino</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview">
+            <img src="./images/29house2x.png" alt="" />
+          </div>
+          <div class="description bp">
+            <div class="rating">
+              <a href="/star-rating?rate=1&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="Рейтинг">
+              </a>
+              <a href="/star-rating?rate=2&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=3&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=4&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+              <a href="/star-rating?rate=5&item=0" rel="nofollow" title="Нажмите для оценки" class="star-rating">
+                <img src="./images/star.png" alt="">
+              </a>
+            </div>
+            <p>от <b>5 148 р</b> <span>/ ночь</span></p>
+            <h4 class="title">Lagoona suerte siguio siempre</h4>
+            <p class="location">Барселона, Испания</p>
+            <a href="#" class="button light">Номера</a>
+          </div>
+        </article>
+        <article class="round_corner">
+          <div class="preview full">
+            <h3><a href="#">Посмотреть все варианты ></a></h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+	<div class="container contacts-container">
+	  <div class="contacts">
+		<h2>Контакты</h2>
+		<div class="contacts-bg round_corner bp">
+		  <dl>
+			<dt>Адрес</dt>
+			<dd>Москва, улица Юности, дом 5 строение 4, офис 2</dd>
+		  </dl>
+		  <dl>
+			<dt>Телефоны</dt>
+			<dd>+7 (499) 535-64-34<br/>
+			+7 (499) 005-05-44</dd>
+		  </dl>
+		  <dl>
+			<dt>E-mail</dt>
+			<dd><a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования
+				<br/><a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества</dd>
+		  </dl>
+		  <dl>
+			<dt>График</dt>
+			<dd>Понедельник - пятница, с 10:00 до 19:00</dd>
+		  </dl>
+		  <a href="#" class="button light">Построить маршрут</a>
+		</div>
+	  </div>
+		<div class="contact-us-form">
+		  <h2>Напишите нам</h2>
+		  <form method="post" action="/send">
+			<div class="input-field">
+			  <input type="text" name="name" value="" placeholder="Имя" />
+			</div>
+			<div class="input-field">
+			  <input type="text" name="phone" value="" placeholder="+7" />
+			</div>
+			<div class="input-field textarea-field">
+			  <textarea name="message" placeholder="Сообщение..."></textarea>
+			</div>
+			<input type="submit" value="Отправить" class="button" />
+		  </form>
+		</div>
+	</div>
+  </section>
+  <footer>
+	<div class="container round_corner">
+	  <div class="copyright">
+		<p>© 2012-2020 Управляющая компания Объединенной сети "Лагуна Хотелс"</p>
+		<p>Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+		<p><a href="#">Политика конфиденциальности</a></p>
+	  </div>
+	  <div class="contacts">
+		<p>11710, Москва, улица Юности, дом 5 строение 4, офис 2</p>
+		<p class="footer-text-style">
+		  +7 (499) 535-64-34
+		  <br>
+		  +7 (499) 005-05-44
+		</p>
+		<p>
+		  <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+		  <br>
+		  <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+		</p>
+	  </div>
+	  <div class="icons">
+		<p><a href="#" class="tripadvisor"></a></p>
+		<p><a href="#" class="twitter"></a></p>
+		<p><a href="#" class="facebook"></a></p>
+		<p><a href="#" class="vk"></a></p>
+		<p><a href="#" class="google"></a></p>
+	  </div>
+	</div>
+  </footer>
+  </body>
+</html>

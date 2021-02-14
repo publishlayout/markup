@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muller', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  background: #f5f5f5;
+}
+
+a {
+  color: #cc9933;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 65px;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  font-size: 29px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.input-field {
+  position: relative;
+  height: 100%;
+  border-radius: 12px;	
+  background: #fff;
+}
+
+.input-field select {
+  width: 100%;
+  padding: 27px 20px 27px 20px;
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+  color: #999999;
+  font-size: 14px;
+  background: none;
+}
+
+.input-field input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  padding: 27px 20px 27px 20px;
+  font-size: 14px;
+  color: #999999;
+  background: none;
+  outline: none;
+}
+
+.input-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+}
+
+.textarea-field {
+  padding: 16px 20px;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+::-webkit-input-placeholder {
+  color: #999999;
+}
+
+::-moz-placeholder {
+  color: #999999;
+}
+
+:-moz-placeholder {
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  color: #999999;
+}
+
+.button {
+  padding: 24px 30px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #c93;
+}
+
+.button.light {
+  border: 1px solid #cc9933;
+  padding: 12px 20px;
+  color: #cc9933;
+  background: #fff;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.round_corner {
+  border-radius: 12px;
+}
+
+.bp {
+	padding: 40px;
+}
+
+header {
+  margin: 30px 0 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  justify-content: space-between;
+}
+
+.header-container-cover {
+  display: flex;
+  align-items: center;
+}
+
+.header-container .logo img {
+  width: 260px;
+  height: auto;
+}
+
+.header-container .contacts {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.header-container .contacts ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.header-container .profile {
+  padding-right: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: url('../images/cursornew.png') 0 0 no-repeat;
+  background-size: 14px;
+}
+
+header .menu-container {
+  padding: 11px 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+header .menu-container nav {
+  align-self: center;
+  padding: 13px 0;
+  font-weight: 400;
+}
+
+header .menu-container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header .menu-container nav ul li {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+header .menu-container nav ul li a {
+  color: #333333;
+}
+
+header .menu-container > div {
+  height: 100%;
+  width: 350px;
+  align-self: stretch;
+}
+
+header .menu-container div .input-field {
+  background: #f1f1f1;
+  border-radius: 17px;
+}
+
+header .menu-container div .input-field input[type=text] {
+  padding: 18px 36px 18px 20px;
+  font-size: 13px;
+  color: #c5c5c5;
+}
+
+header .menu-container div .input-field input[type=submit] {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 18px;
+  width: 20px;
+  height: 25px;
+  border: none;
+  background: transparent url('../images/search2x.png') 50% 50% no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.service-container {
+  display: flex;
+}
+
+.service-container .item {
+  display: inline-block;
+}
+
+.service-container .item form {
+  display: block;
+  overflow: hidden;
+}
+
+.service-container .item+.item {
+  padding-left: 55px;
+}
+
+.service-container .item.booking {
+  width: 518px;
+  height: 545px;
+}
+
+.service-container .input-field {
+  margin-bottom: 25px;
+}
+
+.service-container .item.booking form output {
+  display: inline-block;
+  padding-left: 25px;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+
+.service-container .item.offer {
+  width: 590px;
+  height: 100%;
+}
+
+.service-container .item.offer .offer {
+  width: 590px;
+  height: 545px;
+  padding-left: 44px;
+  background: url('../images/222x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+.service-container .item.offer h3 {
+  margin: 0;
+  padding-top: 260px;
+  font-size: 46px;
+  line-height: 46px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.service-container .item.offer p > span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 25px;
+}
+
+.service-container .item.offer a {
+  padding-left: 40px;
+  font-size: 15px;
+}
+
+.service-container .item.offer a span {
+  vertical-align: bottom;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+main .container > div {
+  padding-left: 40px;
+  line-height: 30px;
+}
+
+.service-article-container .container-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-article-container article {
+  flex-basis: calc(50% - 12px);
+  flex-grow: 0;
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.service-article-container article .preview img {
+  width: 100%;
+}
+
+.service-article-container article .intro h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: normal;
+}
+
+.service-article-container article .intro p {
+  margin: 0;
+}
+
+.advantage-container .container-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.advantage-container .container-cover > div {
+  flex-basis: calc(25% - 20px);
+  flex-grow: 0;
+  align-self: center;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.advantage-container .container-cover > div img {
+  width: 60px;
+  height: auto;
+}
+
+.advantage-container .container-cover > div p {
+  line-height: 28px;
+}
+
+.booking-container .container-cover {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.booking-container .container-cover article {
+  flex-basis: calc(33.3% - 25px);
+  flex-grow: 0;
+  margin-bottom: 25px;
+  background: #fff;
+}
+
+.booking-container .container-cover article .preview img {
+  max-width: 370px;
+  width: 100%;
+}
+
+.booking-container .container-cover article .description {
+  padding-top: 35px;	
+}
+
+.booking-container .container-cover article h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: inherit;
+  font-weight: normal;
+  line-height: 15px;
+}
+
+.booking-container .container-cover article p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 15px;
+}
+
+.booking-container .container-cover article p span {
+  color: #a4a4a4;
+}
+
+.booking-container .container-cover article .rating {
+  float: right;
+}
+
+.booking-container .container-cover article .location {
+  color: #a0a0a0;
+}
+
+.booking-container .container-cover article .button {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.booking-container .container-cover article .preview.full {
+  width: 100%;
+  height: 100%;
+  background: url('../images/412x.png') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.booking-container .container-cover .preview.full h3 {
+  padding-top: 98%;
+  padding-left: 40px;
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.booking-container .container-cover .preview.full h3 a {
+  color: inherit;
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacts-container .contacts {
+  flex-basis: calc(50% - 170px);
+  margin-right: 170px;
+}
+
+.contacts-container .contacts-bg {
+  background: #fff;
+}
+
+.contacts-container .contacts-bg dl {
+  display: flex;
+  padding: 0 0 28px;
+  margin: 0 0 28px;
+  border-bottom: 1px solid #ccc;
+  line-height: 19px;
+}
+
+.contacts-container .contacts-bg dt {
+  flex-basis: 145px;
+  width: 145px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #666666;
+}
+
+.contacts-container .contacts-bg dd {
+  flex-grow: 2;
+  width: 235px;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-container .contacts-bg .button.light {
+  margin-top: 45px;
+  display: inline-block;
+}
+
+.contact-us-form {
+  width: 345px;
+}
+
+.contact-us-form form .input-field {
+  margin-bottom: 24px;
+}
+
+.contact-us-form form .input-field textarea {
+  height: 68px;
+}
+
+.contact-us-form form .button {
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  background: #333333 url('../images/slide27copy.png') 740px 100% no-repeat;
+}
+
+footer .container .copyright {
+  flex-basis: 290px;
+}
+
+footer .container .contacts {
+  flex-basis: 490px;
+}
+
+footer .container .icons {
+  flex-basis: 40px;
+}
+
+footer .container .icons p a {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+footer .container .icons p a.tripadvisor {
+  background: url('../images/tripadvisor2x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+footer .container .icons p a.twitter {
+  background: url('../images/twitter2x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+footer .container .icons p a.facebook {
+  background: url('../images/facebook2x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+footer .container .icons p a.vk {
+  background: url('../images/social2x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+footer .container .icons p a.google {
+  background: url('../images/google-plus-social-logotype2x.png') 0 0 no-repeat;
+  background-size: contain;
+}
+
+footer .container p {
+  margin: 0 0 30px;
+}
